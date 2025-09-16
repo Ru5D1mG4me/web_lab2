@@ -1,0 +1,68 @@
+table.table1 {
+	width: 50%;
+	border-collapse:collapse;
+	border-spacing:0;
+	height: auto;
+}
+
+table.table1, table.table1 td, table.table1 th {
+	border: 1px solid #595959;
+}
+
+table.table1 td, table.table1 th {
+	padding: 3px;
+	height: 20px;
+}
+
+table.table2{
+	width: 25%;
+	border-collapse:collapse;
+	border-spacing:0;
+	height: auto;
+}
+
+table.table2, table.table2 td, table.table2 th {
+	border: 1px solid #595959;
+}
+
+table.table2 td, table.table2 th {
+	padding: 3px;
+	width: 30px;
+	height: 40px;
+}
+
+td.tur {
+    background-color: #00FFCD;
+}
+
+td.bei {
+    background-color: #FFFFCB;
+}
+
+td.rd {
+    background-color: red;
+}
+
+td.bl {
+    background-color: blue;
+}
+
+td.gr {
+    background-color: #00FF01;
+}
+
+td.yell {
+    background-color: yellow;
+}
+
+form {
+    width: 50%;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 5px;
+}
+
+.centered {
+    text-align: center;
+}

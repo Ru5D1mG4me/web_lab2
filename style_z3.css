@@ -1,0 +1,49 @@
+.centered_z3 {
+    text-align: center;
+}
+
+.pol3 {
+    background-color: aqua;
+    color: blue;
+    text-align: end;
+}
+
+.pol5 {
+    background-color: yellow;
+}
+
+table {
+    border: 1px solid black;
+}
+
+.down {
+    vertical-align: sub;
+    font-size: 0.7em;
+}
+
+.bl_z3 {
+    color: blue;
+}
+
+.cont {
+    width: 550px;
+}
+
+.uppr {
+    text-transform: uppercase;
+}
+
+.jaa2 {
+    text-decoration: underline;
+    font-size: 14px; 
+    font-style: italic; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Hgt10 {
+    font-weight: bold;
+}
+
+.gra {
+    background-color: lightgray;
+}

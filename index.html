@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Лабораторная №2</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style_z2.css">
+        <link rel="stylesheet" href="style_z3.css">
+        <style>
+            .blue_z3 {
+                color: blue;
+            }
+
+            .inl {
+                display: inline;
+            }
+
+            th, td {
+                border: 1px double black;
+                font-weight: bold;
+                width: 100px;
+            }
+
+            .pol1 {
+                font-family: "Pattaya", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                text-align: start;
+            }
+
+            .pol4 {
+                background-color: pink;
+                text-align: start;
+                text-decoration: underline;
+                font-style: italic;
+            }
+
+            .up {
+                vertical-align: super;
+                font-size: 0.7em;
+            }
+
+            .mt_vi {
+                text-align: center;
+                font-family: "Pattaya", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: blue;
+            }
+
+            .jaa1 {
+                background-color: rgb(226, 21, 226);
+                font-weight: bold;
+                font-size: 20px; 
+                font-style: italic; 
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .joy10-1 {
+                font-size: 18px; 
+                font-style: italic; 
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .first-line {
+                text-align: left;
+                display: block;
+            }
+            .centered-line {
+                display: block;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Моя страница</h1>
+        <h2>О студенте</h1>
+        <div>
+            <h3>ФИО: Шишкин Дмитрий Ильич</h3>
+            <img src="img/student.jpg" alt="Моё прекрасное лицо" height="200px" width="700px">
+            <h3>Почта: <a href="mailto:dm1tr1ysh1shk1n@rambler.ru">dm1tr1ysh1shk1n@rambler.ru</a></h3>
+            <h3>Ссылка на вуз: <a href="https://nvsu.ru/" target="_blank">ТЫК</a></h3>
+            <h3>О НВГУ: Супер крутой вуз. Очень сильно люблю тут учиться</h3>
+            <h3>Группа: 3312</h3>
+            <h3>Моя будущая профессия: Программист</h3>
+            <h3>Мои хобби: Смотреть аниме, смотреть как сохнет краска, ну и программировать</h3>
+            <h3>Любая другая информация: Я не придумал :(</h3>
+        </div>
+
+        <h2>Таблицы</h2>
+        <h3>Талица А:</h3>
+        <table class="table1">
+            <tr>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td rowspan="3"></td>
+                <td></td>
+                <td rowspan="3"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="3"></td>
+                <td rowspan="3"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <h3>Талица Б:</h3>
+        <table class="table2">
+            <tr>
+                <td class="tur" colspan="8"></td>
+            </tr>
+            <tr>
+                <td class="bei" rowspan="6"></td>
+                <td class="tur" colspan="6"></td>
+                <td class="bei" rowspan="6"></td>
+            </tr>
+            <tr>
+                <td class="bei" rowspan="4"></td>
+                <td class="tur" colspan="4"></td>
+                <td class="bei" rowspan="4"></td>
+            </tr>
+            <tr>
+                <td class="bei" rowspan="2"></td>
+                <td class="rd"></td>
+                <td class="bl"></td>
+                <td class="bei" rowspan="2"></td>
+            </tr>
+            <tr>
+                <td class="gr"></td>
+                <td class="yell"></td>
+            </tr>
+            <tr>
+                <td class="tur" colspan="4"></td>
+            </tr>
+            <tr>
+                <td class="tur" colspan="6"></td>
+            </tr>
+            <tr>
+                <td class="tur" colspan="8"></td>
+            </tr>
+        </table>
+
+        <h2>Формы</h2>
+        <h3>Форма А:</h3>
+        <h4>ЗАО Птицефабрика №1</h1>
+        <form class="centered" action="">
+            <label for="fam">Фамилия</label>
+            <input id="fam" type="text">
+            <br>
+            <label for="in">Инициалы</label>
+            <input id="in" type="text">
+            <br>
+            <label for="pswd">Пароль</label>
+            <input id="pswd" type="password">
+            <br>
+            <label for="addr">Адрес получателя</label>
+            <input id="addr" type="text">
+            <br>
+            <label for="count">Количество</label>
+            <input id="count" type="text">
+            <br>
+            <label for="typ">Тип</label>
+            <select name="meat" id="typ">
+                <option value="kur">Куринные</option>
+                <option value="etc">И тд.</option>
+            </select>
+            <select name="m1" id="typ">
+                <option value="otb">Отборные</option>
+                <option value="etc">И тд.</option>
+            </select>
+            <br>
+            <label for="deliv">Доставка</label>
+            <input type="radio" name="Почтой" id="deliv">
+            <input type="radio" name="Электронно" id="deliv">
+            <input type="radio" name="Курьерон" id="deliv">
+            <br>
+            <label for="naklad">Требуется накладная</label>
+            <input id="count" type="checkbox">
+            <br>
+            <label for="dop">Дополнительная информация</label>
+            <textarea id="dop" cols="75" rows="5"></textarea>
+            <br>
+            <button>Заказать</button>
+            <button>Отмена</button>
+        </form>
+        <br><br><br>
+        <h3>Форма Б:</h3>
+        <h4>Пример формы регистрации сайта</h1>
+        <form action="">
+            <label for="log">Логин:</label><br>
+            <input id="fam" type="text">
+            <br>
+            <label for="pswd">Пароль:</label><br>
+            <input id="pswd" type="password" value="TEST">
+            <br>
+            <label for="url">URL-адрес сайта:</label><br>
+            <input id="url" type="text" value="https://">
+            <br>
+            <label for="name_">Название сайта:</label>
+            <input id="name_" type="text">
+            <br>
+            <label for="opis">Описание сайта:</label>
+            <textarea id="opis" cols="100" rows="15"></textarea>
+            <br>
+            <label for="tema">Тема сайта</label>
+            <select id="tema">
+                <option value="none">Тема не выбрана</option>
+                <option value="tema-1">Тема 1</option>
+            </select>
+            <br>
+            <label for="file_">Баннер 88x31</label>
+            <input id="file_" type="file">
+            <br>
+            <button>Очистить</button>
+            <button>Отправить</button>
+        </form>
+        <h3>Задание 3</h3>
+        <div class="cont">
+            <h1 class="blue_z3 centered_z3" id="start"><div style="letter-spacing: 0.5rem;" class="inl">Таблицы</div>в HTML</h1>
+            <p style="text-indent: 30px;"><span style="background-color: aqua; padding-bottom: 5px;">Одним из наиболее мощных и широко применяемых в <span class="Hgt10">HTML</span> стредств являются <span class="joy10-1">таблицы</span>.</span></p>
+            <p style="text-align: end;"><span style="background-color: yellow; text-decoration: underline;">Понятие табличного представления данных не нуждается в<br>дополнительном пояснении. </span><span class="gra">В HTML таблицы используются не только<br>традиционно, как метод представления данных, но и как средство<br>форматирования Web-страниц.</span></p>
+            <h2 style="color: darkviolet;">Создание простейших HTML-таблиц</h2>
+            <p><span class="jaa1">Описание</span> <span style="text-decoration: underline; font-size: 16px; font-style: italic; font-family: Verdana, Geneva, Tahoma, sans-serif;">таблиц</span> <span class="jaa2">должно</span> располагаться внутри раздела документа &lt;<span class="uppr">body</span>&gt;.</p>
+            <p>
+                <span class="first-line">Каждая <a href="#start">таблица</a> должна начинаться тэгом &lt;TABLE&gt; и завершаться</span>
+                <span class="centered-line">тэгом &lt;/TABLE&gt;</span>
+            </p>
+            <p class="centered_z3"><span style="background-color: lightgrey;"><span class="mt_vi">Каждая</span> строка начинается тэгом &lt;<span class="uppr">tr</span>&gt; (Table Row) и завершается тэгом<br>&lt;<span class="uppr">/tr</span>&gt;. <span class="mt_vi" style="color: red;">Отдельная</span> ячейка в строке обрамляется парой тегов &lt;<span class="uppr">td</span>&gt; и &lt;<span class="uppr">/td</span>&gt; (Table Data) или &lt;<span class="uppr">th</span>&gt; и &lt;<span class="uppr">/th</span>&gt; (Table Header)</span></p>
+            <h3 style="text-align: end;">Таблица 1</h3>
+            <h3 class="mt_vi">Математические выражения</h3>
+            <table>
+            <tr>
+                <th class="pol1">Поле 1</th>
+                <th class="centered_z3" style="background-color: black; color: white;">Поле 2</th>
+                <th class="pol3">Поле 3</th>
+                <th class="pol4">Поле 4</th>
+                <th class="pol5"><div class="inl" style="letter-spacing: 0.5rem;">Поле</div> 5</th>
+            </tr>
+            <tr>
+                <td class="bl_z3">(a+b)<span class="up">2</span></td>
+                <td style="text-align: center;">a<span class="up">2</span>-b<span class="up">2</span></td>
+                <td class="bl_z3" style="text-align: end;">(a-b)<span class="up">3</span></td>
+                <td>A<span class="down">1</span>+A<span class="down">2</span>+...A<span class="down">3</span></td>
+                <td class="bl_z3" style="text-align: center;">y=x<span class="up">2</span></td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
